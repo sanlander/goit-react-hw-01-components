@@ -17,7 +17,8 @@ export const FriendStatus = styled.span`
   border-radius: 50%;
   width: 20px;
   height: 20px;
-  background-color: ${({ isOnline }) => `${isOnline ? '#48B14B' : '#FF514E'}`};
+  background-color: ${p =>
+    `${p.isOnline ? `${p.theme.colors.green}` : `${p.theme.colors.red}`}`};
 `;
 
 export const FriendAvatar = styled.img`
